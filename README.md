@@ -22,12 +22,35 @@ Given a loaded image, the program loads it as greyscale and then iterates throug
 Here are some examples of the effect with different settings:
 
 lpalmer.png, with `modGap=0`, `threshold=40`, `lineAmplitude=4`, `lineGap=0`:
-![alt text](assets/eg.png)
-Fairly low threshold and no gap, means that there are some areas that are fully white.
+<table>
+  <tr>
+    <td><img src="assets/eg.png" width="5000px" alt="thin lines, no gaps"></td>
+    <td>Fairly low threshold and no gap, means that there are some areas that are fully white.</td>
+  </tr>
+</table>
 
-lpalmer.png, with `modGap=0`, `threshold=125`, `lineAmplitude=4`, `linassets/eGap=1`:
-![alt text](eg-1.png)
-Medium threshold and a small gap, with thicker lines. A higher line amplitude means, a smaller number of lines, so might seem like lower 'resolution', but it also has a higher range of line thicknesses.
+---
+
+lpalmer.png, with `modGap=0`, `threshold=125`, `lineAmplitude=4`, `lineGap=1`:
+
+<table>
+  <tr>
+    <td>Medium threshold and a small gap, with thicker lines. A higher line amplitude means, a smaller number of lines, so might seem like lower 'resolution', but it also has a higher range of line thicknesses.</td>
+    <td><img src="assets/eg-1.png" width="5000px" alt="medium threshold, small gap"></td>
+  </tr>
+</table>
+
+---
+
+lpalmer.png, with `modGap=5`, `threshold=107`, `lineAmplitude=0`, `lineGap=0`:
+
+<table>
+  <tr>
+    <td><img src="assets/eg-2.png" width="5000px" alt="just modgaps"></td>
+    <td>0 line amplitude, and no line gaps, so this would be just plain black and white. The modGap setting just adds a regular pattern of black lines.</td>
+  </tr>
+</table>
+
 
 ### Controls
 
