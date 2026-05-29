@@ -11,7 +11,7 @@ let offset = 0;
 let canvas;
 
 function preload() {
-  baseImg = loadImage("../assets/lpalmer.png");
+  baseImg = loadImage("assets/lpalmer.png");
 }
 
 function setup() {
